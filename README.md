@@ -1,1 +1,3 @@
-# people
+
+People Template
+===============
