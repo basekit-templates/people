@@ -2,9 +2,13 @@
 <footer class="template-footer">
 
 	<div class="container">
-        {{widget('profile', 'profile1', { 'profileType':'socialicons' })|raw}}
-        {{widget('profile', 'profile2', { 'profileType':'email' })|raw}}
-        {{widget('profile', 'profile3', { 'profileType':'phone' })|raw}}
+        <div class="template-footer__column1 col1">
+            {{widget('profile', 'copyright', {'profileType':'copyright', 'copyright':'profile'})|raw}}
+        </div>
+
+        <div class="template-footer__column2 col2">
+            {{widget('profile', 'email', {'profileType':'email', 'email':'profile'})|raw}}
+        </div>
 	</div>
 
 </footer>

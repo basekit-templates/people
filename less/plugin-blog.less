@@ -22,15 +22,16 @@
         float: left;
         padding: 0 12px 24px;
         height: auto;
-        width: 48%;
+        width: 50%;
         @media only screen and (max-width : 600px) {
-            padding: 0 0 24px;
             width: 100%;
+            padding: 0;
+            margin-bottom: 20px;
         }
     }
-    .post-article:first-child {
-        width: 100%;
-    }
+
+
+
     // Box Shadow
     .post-image,
     .post-footer {
@@ -59,15 +60,73 @@
     .post-title .title-link {
         color: @color-swatch4;
         &:hover {
-            color: @color-swatch2;
+            color: @color-swatch3;
             text-decoration: none;
         }
     }
     .post-header,
     .post-excerpt,
     .post-footer {
-        padding: 0 20px;
+        padding: 0 30px;
+        @media @mobile {
+            padding: 0 20px;
+        }
     }
+
+    // Text Size in Blogpostlist
+
+    h2 {
+        font-size: bkscale(@font-swatch2-font-size,0.8);
+        line-height: bkscale(@font-swatch2-line-height,0.8);
+            @media @mobile {
+                font-size: bkscale(@font-swatch2-font-size,0.7);
+                line-height: bkscale(@font-swatch2-line-height,0.7);
+            }
+    }
+    .post-excerpt p,
+    .post-footer .timestamp {
+        font-size: bkscale(@font-swatch5-font-size,0.9);
+        line-height: bkscale(@font-swatch5-line-height,0.9);
+            @media @mobile {
+                font-size: bkscale(@font-swatch5-font-size,0.8);
+                line-height: bkscale(@font-swatch5-line-height,0.8);
+            }
+    }
+    .read-more {
+        font-size: 12px;
+    }
+
+    // Featured First Post
+
+    .post-article:first-child {
+        width: 100%;
+        h2 {
+            font-size: @font-swatch2-font-size;
+            line-height: @font-swatch2-line-height;
+            @media @mobile {
+                font-size: bkscale(@font-swatch2-font-size,0.7);
+                line-height: bkscale(@font-swatch2-line-height,0.7);
+            }
+        }
+        .post-excerpt p,
+        .post-footer .timestamp {
+            font-size: @font-swatch5-font-size;
+            line-height: @font-swatch5-line-height;
+            @media @mobile {
+                font-size: bkscale(@font-swatch5-font-size,0.8);
+                line-height: bkscale(@font-swatch5-line-height,0.8);
+            }
+        }
+        .read-more {
+            font-size: 14px;
+            @media @mobile {
+                font-size: 12px;
+            }
+        }
+    }
+
+    // Read More Button
+
     .read-more {
         min-height: inherit;
         padding: 8px 10px;
@@ -75,12 +134,11 @@
         margin-bottom: 20px;
         float: left;
         font-family: @font-swatch7-font-family;
-        font-size: 14px;
         text-transform: uppercase;
         @media @mobile {
             width: auto;
-            min-height: 44px;
-            line-height: 44px;
+            min-height: 40px;
+            line-height: 40px;
             padding: 0 20px;
         }
     }
@@ -103,7 +161,7 @@
     }
     .post-footer .timestamp {
         margin: 0;
-        padding: 13px 0 0;
+        padding: 4px 0 0;
         color: @color-swatch3;
     }
 
@@ -131,22 +189,6 @@
     }
 } // End Blogpostlist
 
-
-// Text Size in Blogpostlist
-
-.blogpostlist {
-    @media @tablet {
-        h2 {
-            font-size: bkscale(@font-swatch2-font-size,0.8);
-            line-height: bkscale(@font-swatch2-line-height,0.8);
-        }
-        .post-excerpt p,
-        .post-footer .timestamp {
-            font-size: bkscale(@font-swatch5-font-size,0.9);
-            line-height: bkscale(@font-swatch5-line-height,0.9);
-        }
-    }
-}
 
 // Blog opacity style for Desktop
 .blogpostlist {

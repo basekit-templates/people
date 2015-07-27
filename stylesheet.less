@@ -16,6 +16,7 @@
 @import "@{templateLocal}/less/widget-gallery.less";    // Widgets
 @import "@{templateLocal}/less/widget-navigation.less";
 @import "@{templateLocal}/less/social-icons.less";
+@import "@{templateLocal}/less/profile-widgets.less";
 
 @import "@{templateLocal}/less/plugin-blog.less";       // Plugins
 @import "@{templateLocal}/less/plugin-menu.less";
@@ -53,7 +54,10 @@ input, textarea, button, .button {
     line-height: @font-swatch7-line-height;
 }
 
+
+// ------------------------------------------
 // Body background
+// ------------------------------------------
 
 @colour1: @color-swatch2;
 @colour2: @color-swatch1;
@@ -69,4 +73,41 @@ body {
     background: -ms-linear-gradient(-45deg, @colour2 0%,@colour2 25%,@colour1 25%,@colour1 75%,@colour1 75%,@colour2 75%); /* IE10+ */
     background: linear-gradient(135deg, @colour2 0%,@colour2 25%,@colour1 25%,@colour1 75%,@colour1 75%,@colour2 75%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@colour2', endColorstr='@colour2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+// ------------------------------------------
+// Default Page Background
+// ------------------------------------------
+
+.bk-pt-default .template-content .container {
+    background-color: @color-swatch7;
+    -webkit-box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
+    -moz-box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
+    box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
+}
+
+// ------------------------------------------
+// Sticky footer
+// ------------------------------------------
+
+body {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+     -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.template-content {
+    flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
 }
