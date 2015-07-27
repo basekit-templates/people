@@ -30,35 +30,6 @@
 				{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
 			</div>
 
-
-
-
-
-            <div class="header-flex-item template-search">
-                <div class="template-blog-search">
-                    {{widget('blogsearch', 'blogsearch', {})|raw}}
-                </div>
-            </div> <!-- End header-flex-item template search -->
-
-            <div class="header-flex-item template-search">
-                <div class="template-product-search">
-                    <form class="form  ecomproductslist__form js-productlist-display-form" method="GET" action="/store">
-                        <div class="form-body">
-                            <div class="form-group">
-                                <input class="input js-display-control" id="page-zones__main-widgets__ecomproductslistWidget__ecomproductslist__search" name="productlist-search" placeholder="Search Products..." type="search" value="">
-                            </div>
-                            <div class="form-group">
-                                <button class="button  button--submit  ecomproductslist__button" type="submit">Search</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-
-
-
-
 			{% if plugins.blog.live and plugins.ecommerce.store.live == false %}
 
 			<div class="header-flex-item template-search">
@@ -84,8 +55,6 @@
                         </div>
                     </form>
                 </div>
-
-                <div class="template-basket">{{widget('ecombasket', 'shopbasket', {})|raw}}</div>
 
              </div> <!-- End header-flex-item template search -->
 
