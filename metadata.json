@@ -73,7 +73,7 @@
             "font-weight": "700",
             "line-height": "26px",
             "color": "@color-swatch6",
-            "color-hover": "@color-swatch7",
+            "color-hover": "@color-swatch3",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch1",
             "background-color-hover": "@color-swatch1"

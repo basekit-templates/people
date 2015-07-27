@@ -1,12 +1,11 @@
 {% extends "layout.twig" %}
-
-
-
+{% block class %}bk-pt-home{% endblock %}
 {% block content %}
 
-{{widget('feature', 'featurehome', {"header": "profile", "defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50%','showBtn': true, "buttonText":"Lorem Ipsum"})|raw}}
-
-<section class="page  page--home">
+    <div class="home-bloglist">
+        <!-- Blog posts list Widget -->
+        {{widget('blogpostlist', 'allblogposts', {})|raw}}
+    </div>
 
 	<!-- Zone Content -->
 	<div class="zone-content">
@@ -15,7 +14,6 @@
 	</div>
 	<!-- End Zone Content -->
 
-</section>
 
 <!-- End Home Page Content -->
 {% endblock %}

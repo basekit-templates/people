@@ -1,9 +1,165 @@
 //
 // Copyright 2014 BaseKit Platform Ltd
 //
-// ----
-// blog
-// ----
+// ---------------
+// Blog Posts List
+// ---------------
 
-// blog
-//...
+.blogpostlist {
+    .clearfix;
+    .post-article {
+        float: left;
+        padding: 0 12px 24px;
+        height: auto;
+        width: 50%;
+        @media only screen and (max-width : 600px) {
+            padding: 0 0 24px;
+            width: 100%;
+        }
+    }
+    .post-article:first-child {
+        width: 100%;
+    }
+    // Box Shadow
+    .post-image,
+    .post-footer {
+        margin-bottom:-6px;
+        -webkit-box-shadow: 6px 0 6px -5px rgba(50, 50, 50, 0.15);
+        -moz-box-shadow: 6px 0 6px -5px rgba(50, 50, 50, 0.15);
+        box-shadow: 6px 0 6px -5px rgba(50, 50, 50, 0.15);
+    }
+    .post-content {
+        -webkit-box-shadow: 6px 0 6px -5px rgba(50, 50, 50, 0.15), 0 6px 6px -5px rgba(50, 50, 50, 0.15);
+        -moz-box-shadow: 6px 0 6px -5px rgba(50, 50, 50, 0.15), 0 6px 6px -5px rgba(50, 50, 50, 0.15);
+        box-shadow: 6px 0 6px -5px rgba(50, 50, 50, 0.15), 0 6px 6px -5px rgba(50, 50, 50, 0.15);
+    }
+    .post-image,
+    .post-content,
+    .post-footer {
+        background-color: @color-swatch7;
+    }
+    .post-image {
+        padding-bottom: 6px;
+    }
+    .post-content {
+        margin: 0;
+        padding-top: 20px;
+    }
+    .post-title .title-link {
+        color: @color-swatch4;
+        &:hover {
+            color: @color-swatch2;
+            text-decoration: none;
+        }
+    }
+    .post-header,
+    .post-excerpt,
+    .post-footer {
+        padding: 0 20px;
+    }
+    .read-more {
+        min-height: inherit;
+        padding: 8px 10px;
+        margin-top: 3px;
+        margin-bottom: 20px;
+        float: left;
+        font-family: @font-swatch7-font-family;
+        font-size: 14px;
+        text-transform: uppercase;
+        @media @mobile {
+            width: auto;
+            min-height: 44px;
+            line-height: 44px;
+            padding: 0 20px;
+        }
+    }
+    // Post Excerpt Full
+    .post-excerpt--full {
+        padding: 0 20px 30px;
+        p {
+            padding: 0;
+        }
+        table {
+            table-layout: fixed;
+            th, td {
+                padding: 5px;
+            }
+        }
+    }
+    .post-footer {
+        padding-bottom: 25px;
+        text-align: right;
+    }
+    .post-footer .timestamp {
+        margin: 0;
+        padding: 13px 0 0;
+        color: @color-swatch3;
+    }
+
+    // Blog images
+    .image-link {
+        overflow: hidden;
+        max-height: 250px;
+        @media @mobile {
+            max-height: 200px;
+        }
+        .image {
+            width: 100%;
+            margin: 0 auto;
+            height: auto;
+            max-height: none;
+        }
+    }
+    .post-list-footer {
+        float: left;
+        width: 100%;
+    }
+    .pagination-item {
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+} // End Blogpostlist
+
+
+// Text Size in Blogpostlist
+
+.blogpostlist {
+    @media @tablet {
+        h2 {
+            font-size: bkscale(@font-swatch2-font-size,0.8);
+            line-height: bkscale(@font-swatch2-line-height,0.8);
+        }
+        .post-excerpt p,
+        .post-footer .timestamp {
+            font-size: bkscale(@font-swatch5-font-size,0.9);
+            line-height: bkscale(@font-swatch5-line-height,0.9);
+        }
+    }
+}
+
+// Blog opacity style for Desktop
+.blogpostlist {
+    @media only screen and (min-width : 770px) {
+        .post-article {
+            transition: opacity .2s;
+        }
+        .post-items:hover .post-article {
+            opacity: 0.6;
+        }
+        .post-items .post-article:hover {
+            opacity: 1;
+        }
+    }
+}
+
+// Link to blog posts list
+.blogpostlist .blog-home-link {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: @font-swatch6-font-family;
+    font-size: @font-swatch6-font-size;
+    font-weight: @font-swatch6-font-weight;
+    line-height: @font-swatch6-line-height;
+    text-align: center;
+}
