@@ -5,7 +5,7 @@
 
 {% include "includes/head.twig" %}
 
-<body class="{{ page.backgroundClass }}">
+<body class="{{ page.backgroundClass }}{% block class %}{% endblock %}">
 
   {% include "includes/header.twig" %}
 

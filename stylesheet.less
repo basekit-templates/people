@@ -73,18 +73,30 @@ body {
 
 // Background
 
-.zone-content {
-    padding: 30px;
-    margin-bottom: 30px;
-    background-color: @color-swatch7;
-    -webkit-box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
-    -moz-box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
-    box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
+.bk-pt-blogpostlist,
+.bk-pt-store {
+    .zone-content {
+        padding: 0;
+        background-color:transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
 }
+
+
 
 // Page Title
 
 .bk-pt-defaultpage {
+    .zone-content {
+        padding: 30px;
+        margin-bottom: 30px;
+        background-color: @color-swatch7;
+        -webkit-box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
+        -moz-box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
+        box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
+    }
     .page-title {
         text-align: center;
         h1 {
@@ -111,6 +123,7 @@ body {
             h1 {
                 padding: 0;
                 line-height: 1;
+                text-align: right;
             }
         }
         .zone-content {
