@@ -1,14 +1,6 @@
-{# Copyright 2014 BaseKit Platform Ltd #}
-{% block class %}bk-pt-default{% endblock %}
 {% extends "layout.twig" %}
-
+{% block class %}bk-pt-blogpost{% endblock %}
 {% block content %}
-
-<div class="bk-pt-defaultpage">
-
-    <div class="page-title">
-        {{widget('pagetitle', 'title', {})|raw}}
-    </div>
 
     <!-- Page Content -->
     <section class="zone-content">
@@ -18,7 +10,5 @@
 
     </section>
     <!-- End Page Content -->
-
-</div>
 
 {% endblock %}

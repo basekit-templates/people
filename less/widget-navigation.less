@@ -2,7 +2,6 @@
 // Navigation
 // ----------
 
-
 // Negative left margin for desktop
 .extendednavigation {
     @media only screen and (min-width : 770px) {
@@ -138,7 +137,11 @@
 }
 
 // Sets background colour to navigation and dropdowns
-.extendednavigation,
+.extendednavigation {
+    @media @tablet {
+        background-color: transparent;
+    }
+}
 .navigation-list--children {
     @media @tablet {
         background-color: @color-swatch1;

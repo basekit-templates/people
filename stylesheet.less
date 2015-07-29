@@ -46,14 +46,6 @@ a {
     }
 }
 
-
-// Formatting all inputs and buttons so they match in size
-input, textarea, button, .button {
-    padding: 5px 12px;
-    line-height: @font-swatch7-line-height;
-}
-
-
 // ------------------------------------------
 // Body background
 // ------------------------------------------
@@ -76,15 +68,61 @@ body {
 
 
 // ------------------------------------------
-// Default Page Background
+// Default Page
 // ------------------------------------------
 
-.bk-pt-default .template-content .container {
+// Background
+
+.zone-content {
+    padding: 30px;
+    margin-bottom: 30px;
     background-color: @color-swatch7;
     -webkit-box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
     -moz-box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
     box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
 }
+
+// Page Title
+
+.bk-pt-defaultpage {
+    .page-title {
+        text-align: center;
+        h1 {
+            color: @color-swatch5;
+        }
+    }
+    @media only screen and (min-width : 770px) {
+        float: left;
+        position: relative;
+        .page-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-transform-origin: 0% 0%;
+            -moz-transform-origin: 0% 0%;
+            -o-transform-origin: 0% 0%;
+            -ms-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+            -webkit-transform: rotate(-90deg) translate(-100%, 0px);
+            -moz-transform: rotate(-90deg) translate(-100%, 0px);
+            -o-transform: rotate(-90deg) translate(-100%, 0px);
+            -ms-transform: rotate(-90deg) translate(-100%, 0px);
+            transform: rotate(-90deg) translate(-100%, 0px);
+            h1 {
+                padding: 0;
+                line-height: 1;
+            }
+        }
+        .zone-content {
+            width: 90%;
+            float: right;
+        }
+    }
+}
+
+
+
+
 
 // ------------------------------------------
 // Sticky footer
@@ -110,3 +148,57 @@ body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
 }
+
+// Columns in Footer
+
+.template-footer {
+    display: inline-block;
+    width: 100%;
+    padding: 50px 0;
+    background-color: lighten(@color-swatch1, 4%);
+    p,
+    a {
+        font-size: bkscale(@font-swatch5-font-size,0.9);
+        line-height: bkscale(@font-swatch5-line-height,0.9);
+        padding: 0;
+    }
+}
+
+.template-footer__column2.col2 {
+    margin-top: 20px;
+}
+
+.template-footer__column1,
+.template-footer__column2 {
+    @media screen and (min-width: 700px) {
+        overflow: hidden;
+        display: inline-block;
+        width: 50%;
+        height: auto;
+        &.col1 {
+            float: left;
+            padding-right: 20px;
+        }
+        &.col2 {
+            float: right;
+            padding-left: 20px;
+            text-align: right;
+            margin-top: 0;
+        }
+    }
+}
+
+
+
+// -----------------------------
+// Tag link
+// -----------------------------
+
+.tag-link:after {
+    content: "\002C";
+}
+
+.tag-item:last-child .tag-link:after {
+    content: "";
+}
+

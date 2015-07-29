@@ -68,6 +68,18 @@ button,
     }
 }
 
+
+
+
+// Formatting all inputs and buttons so they match in size
+input, textarea, button, .button {
+    line-height: @font-swatch7-line-height;
+}
+
+
+
+
+
 // ----------------------------
 // FORMS
 // ----------------------------
@@ -438,7 +450,7 @@ select::-ms-expand{
 .template-search {
     @media @tablet {
         margin-top: 30px;
-        border: 1px solid darken(@color-swatch1, 10%);
+        border: 1px solid darken(@color-swatch1, 20%);
     }
     .form-body {
         width: auto;
