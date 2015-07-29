@@ -22,16 +22,12 @@
             }
         }
     }
-    .timestamp {
+    .post-footer .timestamp {
         font-family: @font-swatch2-font-family;
-        color: lighten(@color-swatch5, 25%);
-        @media only screen and (min-width : 1440px) {
-            top: 418px;
-        }
         @media only screen and (min-width : 770px) {
             position: absolute;
-            top: 380px;
-            left: 0;
+            top: 30px;
+            left: 13px;
             -webkit-transform-origin: 0% 0%;
             -moz-transform-origin: 0% 0%;
             -o-transform-origin: 0% 0%;
@@ -48,6 +44,24 @@
             line-height: @font-swatch2-line-height;
             color: darken(@color-swatch1, 5%);
         }
+        @media only screen and (min-width : 960px) {
+            left: 25px;
+        }
+        @media only screen and (min-width : 1024px) {
+            left: 33px;
+        }
+    }
+    .post-article--has-image > .post-footer .timestamp {
+        @media only screen and (min-width : 770px) {
+            top: 380px;
+            left: 0;
+        }
+        @media only screen and (min-width : 960px) {
+            left: 0;
+        }
+        @media only screen and (min-width : 1024px) {
+            left: 0;
+        }
     }
 }
 
@@ -57,6 +71,9 @@
     line-height: 0;
     .post-article {
         position: relative;
+    }
+    .post-article:last-child {
+        margin-bottom: 0;
     }
     .post-image {
         display: inline-block;
@@ -72,10 +89,13 @@
             margin: 0 auto;
         }
     }
+    .post-title {
+        padding: 30px 0 20px;
+    }
     .post-footer {
         margin-top: 30px;
         padding-top: 20px;
-        border-top: 2px solid darken(@color-swatch1, 5%);
+        border-top: 1px solid darken(@color-swatch1, 3%);
     }
     .post-category {
         @media @mobile {
@@ -88,6 +108,7 @@
     }
     .category-link,
     .tag-link {
+        margin-right: 5px;
         font-family: @font-swatch7-font-family;
         font-size: @font-swatch7-font-size;
         font-weight: 400;
@@ -101,7 +122,6 @@
     .tag-link {
         &:before {
             content: "#";
-            color: @color-swatch3;
         }
     }
 }
@@ -161,7 +181,7 @@
     @media only screen and (min-width : 770px) {
         width: 70%;
         margin: 0 auto;
-        border-top: 1px solid 2px solid darken(@color-swatch1, 5%);
+        border-top: 2px solid darken(@color-swatch7, 5%);
         padding-top: 40px;
     }
 }
