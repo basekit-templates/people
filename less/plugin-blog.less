@@ -7,6 +7,9 @@
 // Single Blog Post
 // ----------------
 
+
+// Style for post date in Single Post Page
+
 .bk-pt-blogpost .blogpost {
     .image-link {
         @media only screen and (min-width : 770px) {
@@ -48,6 +51,8 @@
     }
 }
 
+// General Style for Single Post
+
 .blogpost {
     line-height: 0;
     .post-article {
@@ -64,14 +69,13 @@
     .post-footer {
         @media only screen and (min-width : 770px) {
             width: 70%;
-            margin-left: 15%;
-            margin-right: 15%;
+            margin: 0 auto;
         }
     }
     .post-footer {
         margin-top: 30px;
         padding-top: 20px;
-        border-top: 1px solid darken(@color-swatch1, 5%);
+        border-top: 2px solid darken(@color-swatch1, 5%);
     }
     .post-category {
         @media @mobile {
@@ -151,7 +155,16 @@
     }
 }
 
+// Disqus Widget in Blogpost page
 
+.bk-pt-blogpost .disqus {
+    @media only screen and (min-width : 770px) {
+        width: 70%;
+        margin: 0 auto;
+        border-top: 1px solid 2px solid darken(@color-swatch1, 5%);
+        padding-top: 40px;
+    }
+}
 
 
 
