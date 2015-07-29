@@ -7,7 +7,18 @@
 // Single Blog Post
 // ----------------
 
-.bk-pt-blogpost {
+.bk-pt-blogpost .blogpost {
+    .image-link {
+        @media only screen and (min-width : 770px) {
+            height: 350px;
+            line-height: 350px;
+            vertical-align: middle;
+            background-color: @color-swatch1;
+            .image {
+                vertical-align: middle;
+            }
+        }
+    }
     .timestamp {
         font-family: @font-swatch2-font-family;
         color: lighten(@color-swatch5, 25%);
@@ -16,7 +27,7 @@
         }
         @media only screen and (min-width : 770px) {
             position: absolute;
-            top: 405px;
+            top: 380px;
             left: 0;
             -webkit-transform-origin: 0% 0%;
             -moz-transform-origin: 0% 0%;
@@ -38,8 +49,13 @@
 }
 
 .blogpost {
+    line-height: 0;
     .post-article {
         position: relative;
+    }
+    .post-image {
+        display: inline-block;
+        width: 100%;
     }
     .image-link {
         text-align: center;
@@ -47,19 +63,15 @@
     .post-content,
     .post-footer {
         @media only screen and (min-width : 770px) {
-            width: 80%;
-            margin: 0 10% 0 10%;
-        }
-    }
-    .post-title {
-        @media only screen and (min-width : 770px) {
-            padding: 30px 0 20px;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
         }
     }
     .post-footer {
         margin-top: 30px;
         padding-top: 20px;
-        border-top: 3px solid darken(@color-swatch1, 3%);
+        border-top: 1px solid darken(@color-swatch1, 5%);
     }
     .post-category {
         @media @mobile {
@@ -76,10 +88,16 @@
         font-size: @font-swatch7-font-size;
         font-weight: 400;
         line-height: @font-swatch7-line-height;
+        color: lighten(@color-swatch5, 25%);
+        &:hover {
+            color: @color-swatch3;
+            text-decoration: none;
+        }
     }
     .tag-link {
         &:before {
             content: "#";
+            color: @color-swatch3;
         }
     }
 }
@@ -100,7 +118,7 @@
             background: transparent;
         }
         @media only screen and (min-width:668px) {
-            border-right: 2px solid darken(@color-swatch1, 3%);
+            border-right: 1px solid darken(@color-swatch1, 5%);
         }
         @media @mobile {
             min-height: 44px;
@@ -141,6 +159,41 @@
 // ---------------
 // Blog Posts List
 // ---------------
+
+
+// Featured First Post
+.bk-pt-home,
+.bk-pt-blogpostlist {
+    .post-article:first-child {
+        width: 100%;
+        h2 {
+            font-size: @font-swatch2-font-size;
+            line-height: @font-swatch2-line-height;
+            @media @mobile {
+                font-size: bkscale(@font-swatch2-font-size,0.7);
+                line-height: bkscale(@font-swatch2-line-height,0.7);
+            }
+        }
+        .post-excerpt p,
+        .post-footer .timestamp {
+            font-size: @font-swatch5-font-size;
+            line-height: @font-swatch5-line-height;
+            @media @mobile {
+                font-size: bkscale(@font-swatch5-font-size,0.8);
+                line-height: bkscale(@font-swatch5-line-height,0.8);
+            }
+        }
+        .read-more {
+            font-size: 14px;
+            @media @mobile {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+
 
 .blogpostlist {
     margin: 0 -12px;
@@ -236,35 +289,6 @@
     }
     .read-more {
         font-size: 12px;
-    }
-
-    // Featured First Post
-
-    .post-article:first-child {
-        width: 100%;
-        h2 {
-            font-size: @font-swatch2-font-size;
-            line-height: @font-swatch2-line-height;
-            @media @mobile {
-                font-size: bkscale(@font-swatch2-font-size,0.7);
-                line-height: bkscale(@font-swatch2-line-height,0.7);
-            }
-        }
-        .post-excerpt p,
-        .post-footer .timestamp {
-            font-size: @font-swatch5-font-size;
-            line-height: @font-swatch5-line-height;
-            @media @mobile {
-                font-size: bkscale(@font-swatch5-font-size,0.8);
-                line-height: bkscale(@font-swatch5-line-height,0.8);
-            }
-        }
-        .read-more {
-            font-size: 14px;
-            @media @mobile {
-                font-size: 12px;
-            }
-        }
     }
 
     // Read More Button
