@@ -146,6 +146,33 @@ body {
 
 
 
+// ------------------------------------------
+// Categories and Tags
+// ------------------------------------------
+
+.product-attribute-title,
+.category-title,
+.tags-title {
+    display: none;
+}
+.category-link,
+.tag-link {
+    margin-right: 5px;
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-weight: 400;
+    line-height: @font-swatch7-line-height;
+    color: lighten(@color-swatch5, 25%);
+    &:hover {
+        color: @color-swatch3;
+        text-decoration: none;
+    }
+}
+.tag-link {
+    &:before {
+        content: "#";
+    }
+}
 
 
 // ------------------------------------------
