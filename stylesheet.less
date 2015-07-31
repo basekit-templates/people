@@ -14,6 +14,7 @@
 @import "@{templateLocal}/less/header.less";         // Header
 
 @import "@{templateLocal}/less/widget-gallery.less";    // Widgets
+@import "@{templateLocal}/less/widget-slideshow.less";
 @import "@{templateLocal}/less/widget-navigation.less";
 @import "@{templateLocal}/less/social-icons.less";
 @import "@{templateLocal}/less/profile-widgets.less";
@@ -81,6 +82,9 @@ body {
     -webkit-box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
     -moz-box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
     box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
+    @media @mobile {
+        padding: 20px;
+    }
 }
 
 .bk-pt-blogpostlist {
@@ -261,4 +265,36 @@ hr {
     margin-bottom: 18px;
     background-color: darken(@color-swatch7, 5%);
 }
+
+
+
+
+// -----------------------------
+// Images Caption
+// -----------------------------
+
+.caption {
+    .image-title {
+        font-family: @font-swatch8-font-family;
+        font-size: @font-swatch8-font-size;
+        line-height: @font-swatch8-line-height;
+        font-weight: @font-swatch8-font-weight;
+        color: @font-swatch8-color;
+    }
+    .image-description {
+        font-family: @font-swatch9-font-family;
+        font-size: @font-swatch9-font-size;
+        line-height: @font-swatch9-line-height;
+        font-weight: @font-swatch9-font-weight;
+        color: @font-swatch9-color;
+    }
+}
+
+
+
+
+
+
+
+
 

@@ -111,19 +111,28 @@ textarea,
 // ----------------------------
 
 .legend {
-    font-family: @font-swatch3-font-family;
-    font-size: @font-swatch4-font-size;
-    line-height: @font-swatch4-line-height;
-    color: @font-swatch4-color;
+    font-family: @font-swatch2-font-family;
+    font-size: @font-swatch2-font-size;
+    line-height: @font-swatch2-line-height;
+    font-weight: @font-swatch2-font-weight;
+    color: @color-swatch2;
     margin-bottom: 10px;
 }
 
 .label,
 .input {
     font-family: @font-swatch5-font-family;
-    font-size: bkscale(@font-swatch5-font-size,0.8);
+    font-size: bkscale(@font-swatch5-font-size,0.9);
     line-height: bkscale(@font-swatch5-line-height,0.9);
     color: @font-swatch5-color;
+}
+
+.label {
+    font-weight: 700;
+}
+.label,
+.select {
+    font-family: @font-swatch2-font-family;
 }
 
 // Signup
@@ -206,60 +215,6 @@ textarea,
         }
     }
 }
-
-.signupform, // Signup
-.blogsearch, // Blog Search
-.contactform  { // Contact Form
-    .button {
-        @media @mobile {
-            margin-left: 0;
-        }
-    }
-}
-
-// Blog Search Button on Tablet and Desktop
-
-.zone-content .blogsearch {
-    @media only screen and (min-width:480px) {
-        .input  {
-            border-right: 0;
-        }
-        .button--submit {
-            position: relative;
-            width: 50px;
-            height: auto;
-            padding: 5px 12px;
-            font-size: 0;
-            text-indent: -100px;
-            overflow: hidden;
-            cursor: pointer;
-            background-color: transparent;
-            border: 2px solid @color-swatch7;
-            border-left: 0;
-            &:before {
-                position: absolute;
-                right: 13px;
-                content: "\F002";
-                font-family: 'FontAwesome', sans-serif;
-                font-size: 18px;
-                color: @font-swatch7-color;
-                text-indent: 0;
-                .transition( all, 0.5s, ease );
-                @media @mobile {
-                    top: 0;
-                }
-            }
-            &:hover:before {
-                color: @color-swatch3;
-                .transition( all, 0.5s, ease );
-            }
-        }
-    }
-}
-
-
-
-
 
 // Signup Form and Blog Search on Desktop & Tablet
 // ------------------------------------------------
