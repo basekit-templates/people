@@ -206,7 +206,7 @@
         }
     }
     .menu-section--subsection .section-header {
-        border-bottom: 2px dotted @color-swatch5;
+        border-bottom: 2px solid darken(@color-swatch1, 15%);
         margin-bottom: 10px;
         padding-bottom: 15px;
         padding-top: 20px;
@@ -224,12 +224,19 @@
             padding: 20px;
         }
         .section-header {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             padding-bottom: 20px;
+            padding-top: 0;
+        }
+        .menu-item--featured {
+            background-color: transparent;
         }
         .menu-item--featured,
         .item-image .image {
             padding: 0;
+        }
+        .section-note {
+            border-top: 2px solid darken(@color-swatch1, 15%);
         }
     }
 }
