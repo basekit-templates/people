@@ -61,7 +61,49 @@
     .listing-title {
         display: none;
     }
+    .listing-order {
+        width: 100%;
+        display: inline-block;
+        font-family: @font-swatch2-font-family;
+        font-size: bkscale(@font-swatch5-font-size,0.8);
+        line-height: bkscale(@font-swatch5-line-height,0.9);
+        font-weight: 700;
+    }
+    .title-link {
+        font-size: @font-swatch5-font-size;
+        line-height: @font-swatch5-line-height;
+    }
+    .label {
+        font-weight: 700;
+    }
+    .label,
+    .select {
+        font-family: @font-swatch2-font-family;
+    }
 }
+
+
+// Pagination
+
+.listing-footer {
+    width: 100%;
+    display: inline-block;
+    margin-top: 40px;
+    .button--pagination {
+        min-height: inherit;
+        min-width: 34px;
+        color: @color-swatch4;
+        background-color: @color-swatch1;
+        text-align: center;
+    }
+    .pagination-item.current .button--pagination {
+        color: @color-swatch7;
+        background-color: @color-swatch3;
+    }
+}
+
+
+
 
 // Basket widget
 // -------------
@@ -135,6 +177,9 @@
     }
     .product-title {
         padding: 10px 0;
+    }
+    .product-price {
+        color: @color-swatch5;
     }
     .product-actions {
         padding: 20px;
