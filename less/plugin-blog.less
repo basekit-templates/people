@@ -170,9 +170,10 @@
 // --------------------------------
 
 
-// Featured First Post
+// Blog List in Home Page and Blog Page
 .bk-pt-home,
 .bk-pt-blogpostlist {
+    // First Article Full Width
     .post-article:first-child {
         width: 100%;
         h2 {
@@ -199,37 +200,6 @@
             }
         }
     }
-}
-
-.blogpostlist {
-    margin: 0 -12px;
-    @media only screen and (max-width : 600px) {
-        margin: 0;
-    }
-    .clearfix;
-    .post-items {
-        .flex;
-        -webkit-flex-wrap: wrap;
-        -moz-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        width: 100%;
-    }
-    .post-article {
-        float: left;
-        padding: 0 12px 0;
-        height: auto;
-        width: 50%;
-        @media only screen and (max-width : 600px) {
-            width: 100%;
-            padding: 0;
-            margin-bottom: 20px;
-        }
-    }
-.bk-pt-blogpostlist {
     // Box Shadow
     .post-image {
         -webkit-box-shadow: 6px 0 6px -5px rgba(50, 50, 50, 0.15);
@@ -273,7 +243,44 @@
             padding: 0 20px;
         }
     }
+    .post-footer {
+        padding-bottom: 20px;
+        text-align: right;
+        @media @mobile {
+            padding-bottom: 35px;
+        }
+    }
 }
+
+.blogpostlist {
+    margin: 0 -12px;
+    @media only screen and (max-width : 600px) {
+        margin: 0;
+    }
+    .clearfix;
+    .post-items {
+        .flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .post-article {
+        float: left;
+        padding: 0 12px 0;
+        height: auto;
+        width: 50%;
+        @media only screen and (max-width : 600px) {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+    }
+
     // Text Size in Blogpostlist
 
     h2 {
@@ -330,10 +337,7 @@
             }
         }
     }
-    .post-footer {
-        padding-bottom: 20px;
-        text-align: right;
-    }
+
     .post-footer .timestamp {
         margin: 0;
         padding: 7px 0 0;
