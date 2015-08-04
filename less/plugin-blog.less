@@ -177,6 +177,15 @@
         // First Article Full Width
         .post-article:first-child {
             width: 100%;
+            .image-link {
+                max-height: 350px;
+                @media @table {
+                    max-height: 250px;
+                }
+                @media @mobile {
+                    max-height: 200px;
+                }
+            }
             h2 {
                 font-size: @font-swatch2-font-size;
                 line-height: @font-swatch2-line-height;
