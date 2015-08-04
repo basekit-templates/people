@@ -365,3 +365,30 @@ hr {
     list-style: none;
     margin-left: 0;
 }
+
+
+
+
+// -----------------------------
+// Click to Call Widget
+// -----------------------------
+
+.clicktocall {
+    a:hover {
+        text-decoration: none;
+        cursor: text;
+    }
+    @media @mobile {
+        .phone-number-link {
+            width: 100%;
+            padding: 8px 20px;
+            text-align: center;
+        }
+        a:hover {
+            cursor: pointer;
+        }
+        .label {
+            color: @font-swatch7-color;
+        }
+    }
+}
