@@ -885,3 +885,43 @@
     line-height: @font-swatch7-line-height;
     color: @font-swatch7-color;
 }
+
+
+
+
+// -----------------
+// Featured products
+// -----------------
+
+.ecomfeaturedproducts .product-list {
+    float: left;
+}
+
+.ecomfeaturedproducts .listing-title {
+    padding: 1em 0 2em;
+}
+
+// One Product
+
+.ecomfeaturedproducts .products-1 {
+    width: 100%;
+    float: left;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    .product-item {
+        width: 100%;
+    }
+}
+
+// Two and Four Products
+
+.ecomfeaturedproducts .products-2,
+.ecomfeaturedproducts .products-4 {
+    .product-item {
+        width: 48%;
+        @media @mobile {
+            width: 100%;
+        }
+    }
+}
