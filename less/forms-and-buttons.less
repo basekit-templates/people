@@ -67,7 +67,7 @@ button,
     button,
     .button {
         @media only screen and (min-width:480px) {
-            padding: 7px 12px;
+            padding: 6px 12px;
         }
     }
 }
@@ -185,7 +185,11 @@ textarea,
     .input,
     .textarea {
         background: transparent;
-        border: 1px solid darken(@color-swatch7, 10%);
+        border: none;
+        box-shadow: inset 0px 0px 0px 1px darken(@color-swatch7, 10%);
+        -webkit-box-shadow: inset 0px 0px 0px 1px darken(@color-swatch7, 10%);
+        -moz-box-shadow: inset 0px 0px 0px 1px darken(@color-swatch7, 10%);
+        -o-box-shadow: inset 0px 0px 0px 1px darken(@color-swatch7, 10%);
     }
 }
 
@@ -256,7 +260,7 @@ textarea,
         }
     }
     .button {
-        padding: 7px 22px;
+        padding: 6px 12px;
     }
 }
 
