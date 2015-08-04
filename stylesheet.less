@@ -116,6 +116,8 @@ body {
     .page-title {
         text-align: center;
         h1 {
+            font-size: bkscale(@font-swatch1-font-size,0.9);
+            line-height: bkscale(@font-swatch1-line-height,0.9);
             color: @color-swatch5;
         }
     }
@@ -145,6 +147,8 @@ body {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                font-size: @font-swatch1-font-size;
+                line-height: @font-swatch1-line-height;
             }
         }
         .zone-content {
@@ -175,9 +179,9 @@ body {
     margin-right: 5px;
     font-family: @font-swatch7-font-family;
     font-size: @font-swatch7-font-size;
-    font-weight: 400;
     line-height: @font-swatch7-line-height;
     color: lighten(@color-swatch5, 25%);
+    font-weight: 400;
     &:hover {
         color: @color-swatch3;
         text-decoration: none;
