@@ -160,3 +160,39 @@
         background-color: @color-swatch2;
     }
 }
+
+// Responsive Columns
+// ------------------
+
+// Two Columns
+.columns-two-left,
+.columns-two-right,
+// Three Columns
+.columns-three-left,
+.columns-three-middle,
+.columns-three-right,
+// Four Columns
+.columns-four-first,
+.columns-four-second,
+.columns-four-third,
+.columns-four-fourth {
+    // Slideshow set minimum height
+    .responsiveslideshow .slides-list,
+    .responsiveslideshow .figure,
+    .slide-navigation {
+        min-height: 369px;
+        @media only screen and (max-width:1224px) {
+            min-height: 369px;
+        }
+        @media only screen and (max-width:1024px) {
+            min-height: 369px;
+        }
+        @media only screen and (max-width:900px) {
+            min-height: 369px;
+        }
+        @media @tablet {
+            min-height: 369px;
+        }
+    }
+}
+
