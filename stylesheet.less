@@ -219,6 +219,9 @@ body {
         line-height: bkscale(@font-swatch5-line-height,0.9);
         padding: 0;
     }
+    .signupform .form-body {
+        width: 100%;
+    }
 }
 
 .template-footer__column2.col2 {
@@ -293,8 +296,59 @@ hr {
 
 
 
+// -----------------------------
+// Twitter Widget
+// -----------------------------
 
-
-
-
+.twitter .tweet-item {
+    p {
+        padding-bottom: 0;
+    }
+    .tweet-wrap {
+        max-width: 80%;
+    }
+    .avatar {
+        max-width: 16%;
+        margin-right: 15px;
+        @media @mobile {
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+    }
+    .avatar-image {
+        @media @tablet {
+            max-width: 48px;
+        }
+    }
+    .tweet-wrap {
+        max-width: 77%;
+        @media @mobile {
+            margin: 0 auto;
+        }
+    }
+    .avatar,
+    .tweet-wrap {
+        display: inline-block;
+        vertical-align: top;
+        @media @mobile {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .account-link {
+        &:hover {
+            color: @color-swatch3;
+            text-decoration: none;
+        }
+    }
+    .tweet-metadata {
+        font-size: 90%;
+        .timestamp, .via {
+            color: lighten(@color-swatch5, 15%)
+        }
+    }
+    .timestamp {
+        margin-right: 5px;
+    }
+}
 
