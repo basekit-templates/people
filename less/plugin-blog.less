@@ -169,7 +169,6 @@
 // Blog Posts List
 // --------------------------------
 
-
 .blogpostlist {
     .clearfix;
     .post-items {
@@ -186,11 +185,6 @@
         flex: 0 1 47%;
         margin: 20px 10px;
         position: relative;
-        // Box Shadow
-        background-color: @color-swatch7;
-        -webkit-box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
-        -moz-box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
-        box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
         @media only screen and (max-width : 600px) {
             width: 100%;
             padding: 0;
@@ -198,20 +192,13 @@
         }
     }
     .post-image {
-        padding-bottom: 6px;
+        padding-bottom: 20px;
     }
     .post-content {
         margin: 0;
-        padding-top: 15px;
+        padding-top: 0;
     }
-    .post-header,
-    .post-excerpt,
-    .post-footer {
-        padding: 0 30px;
-        @media @mobile {
-            padding: 0 20px;
-        }
-    }
+
     // Text in Blogpostlist
 
     .post-title {
@@ -330,6 +317,28 @@
 .bk-pt-home,
 .bk-pt-blogpostlist {
     .blogpostlist {
+        .post-article {
+            // Box Shadow
+            background-color: @color-swatch7;
+            -webkit-box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
+            -moz-box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
+            box-shadow: 6px 6px 6px -5px rgba(50, 50, 50, 0.15);
+        }
+        .post-image {
+            padding-bottom: 6px;
+        }
+        .post-content {
+            margin: 0;
+            padding-top: 15px;
+        }
+        .post-header,
+        .post-excerpt,
+        .post-footer {
+            padding: 0 30px;
+            @media @mobile {
+                padding: 0 20px;
+            }
+        }
         // First Article Full Width
         .post-article:first-child {
             width: 100%;
