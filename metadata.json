@@ -4,7 +4,7 @@
     "thumbnail": "thumbnail.png",
     "screenshot": "screenshot.jpg",
     "templateType":"blog",
-    "pageTypes": ["home", "blogpost"],
+    "pageTypes": ["home"],
     "tags": {
     "en": ["blog", "minimal", "clean", "bright", "multipurpose", "simple", "contemporary", "flexible", "modern", "photography"],
     "es": ["blog", "minimalista", "limpio", "claro", "multiuso", "simple", "contemporáneo", "flexible", "moderno", "fotográfico"],
