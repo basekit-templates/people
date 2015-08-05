@@ -32,9 +32,6 @@
     -ms-flex-item-align: stretch;
     align-self: stretch;
     margin-bottom: 0;
-    @media only screen and (min-width : 770px) {
-        margin: 10px 0;
-    }
     @media @tablet {
         -webkit-box-ordinal-group: 1;
         -moz-box-ordinal-group: 1;
@@ -56,6 +53,9 @@
     -webkit-flex-direction: row-reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    @media only screen and (min-width : 770px) {
+        margin: 10px 0;
+    }
 }
 
 // Navigation widget
