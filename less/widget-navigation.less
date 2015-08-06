@@ -123,6 +123,10 @@
     }
 }
 
+.header-flex-container .socialicons > .navigation-toggle:after {
+    top: -49px;
+}
+
 // Clears margin on ul, hides navigatio on mobile (made visible in conjunction with navigation-toggle)
 .navigation-list {
     margin: 0;
@@ -183,17 +187,6 @@
     @media @tablet {
         padding-left: 8px;
         padding-right: 8px;
-    }
-}
-
-// Fix overlay in editor on tablet and mobile
-
-div#page-zones__template-widgets__extendednavigation-extendednavigation-bk-overlay {
-    @media @tablet {
-        width: 20%;
-        height: 44px;
-        top: -44px !important;
-        left: inherit !important;
     }
 }
 

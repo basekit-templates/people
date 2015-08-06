@@ -84,9 +84,14 @@
 // Fix for nav and social icons overlay in tablet and mobile
 // ---------------------------------------------------------
 
-div#page-zones__template-widgets__socialicons-socialnetworks-bk-overlay {
+// Fix overlay in editor on tablet and mobile
+
+div#page-zones__template-widgets__extendednavigation-extendednavigation-bk-overlay {
     @media @tablet {
         width: 50%;
+        height: 44px;
+        top: -44px !important;
+        left: 0;
     }
     @media @mobile {
         width: 20%;
