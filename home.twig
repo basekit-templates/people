@@ -7,7 +7,7 @@
         {{widget('blogpostlist', 'allblogposts', {})|raw}}
     </div>
 
-    {% if plugins.blog.live == false %}
+    {% if plugins.blog.live != true %}
 	<!-- Zone Content -->
 	<div class="zone-content">
 		<!-- Main Widet Zone -->
