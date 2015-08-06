@@ -23,11 +23,9 @@
 
 	<div class="template-header-rowtwo header-flex-container">
 
-            {% if logo and logo|length > 0 %}
 			<div class="header-flex-item template-logo">
 				{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
 			</div>
-            {% endif %}
 
 			<div class="header-flex-item template-companyname">
 				{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
