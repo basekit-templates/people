@@ -150,10 +150,13 @@
     }
 }
 .navigation-list--children {
-    left: inherit;
+    left: 12px;
     right: 0;
     white-space: normal;
     border: 1px solid darken(@color-swatch1, 10%);
+    @media @tablet {
+        left: inherit;
+    }
     .navigation-item--child {
         @media only screen and (min-width:770px) {
             border-bottom: 1px solid darken(@color-swatch1, 5%);
