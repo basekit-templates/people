@@ -23,7 +23,44 @@
             "color5":"#838383",
             "color6":"#555556",
             "color7":"#ffffff"
+        },
+        "Swatch 2": {
+            "color1":"#fbfaf6",
+            "color2":"#eeecde",
+            "color3":"#9fa8a3",
+            "color4":"#3b403d",
+            "color5":"#8c8d8c",
+            "color6":"#3b403d",
+            "color7":"#ffffff"
+        },
+        "Swatch 3": {
+            "color1":"#f0eceb",
+            "color2":"#729f98",
+            "color3":"#283018",
+            "color4":"#2d3125",
+            "color5":"#686966",
+            "color6":"#2d3125",
+            "color7":"#ffffff"
+        },
+        "Swatch 4": {
+            "color1":"#f7f7f7",
+            "color2":"#bcd5d1",
+            "color3":"#c17d22",
+            "color4":"#221a0a",
+            "color5":"#7e7e7e",
+            "color6":"#221a0a",
+            "color7":"#ffffff"
+        },
+        "Swatch 5": {
+            "color1":"#f2efe8",
+            "color2":"#c2d4d8",
+            "color3":"#3396ac",
+            "color4":"#3a3833",
+            "color5":"#696765",
+            "color6":"#3a3833",
+            "color7":"#ffffff"
         }
+
     },
     "fontSwatch": {
        "title": "Karla",
