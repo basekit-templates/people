@@ -68,9 +68,15 @@ a {
 
 body {
     height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/@color-swatch1+0,000000+25,ffffff+25,ffffff+75,ffffff+75,000000+75 */
     background: @color-swatch1; /* Old browsers */
-
-
+    background: -moz-linear-gradient(-45deg, @color-swatch1 0%, @color-swatch1 25%, @color-swatch2 25%, @color-swatch2 75%, @color-swatch2 75%, @color-swatch1 75%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,@color-swatch1), color-stop(25%,@color-swatch1), color-stop(25%,@color-swatch2), color-stop(75%,@color-swatch2), color-stop(75%,@color-swatch2), color-stop(75%,@color-swatch1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, @color-swatch1 0%,@color-swatch1 25%,@color-swatch2 25%,@color-swatch2 75%,@color-swatch2 75%,@color-swatch1 75%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, @color-swatch1 0%,@color-swatch1 25%,@color-swatch2 25%,@color-swatch2 75%,@color-swatch2 75%,@color-swatch1 75%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, @color-swatch1 0%,@color-swatch1 25%,@color-swatch2 25%,@color-swatch2 75%,@color-swatch2 75%,@color-swatch1 75%); /* IE10+ */
+    background: linear-gradient(135deg, @color-swatch1 0%,@color-swatch1 25%,@color-swatch2 25%,@color-swatch2 75%,@color-swatch2 75%,@color-swatch1 75%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color-swatch1', endColorstr='@color-swatch1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 
