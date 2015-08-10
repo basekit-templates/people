@@ -303,9 +303,25 @@
     }
 
 
+
+
+    // Current
+
+    .gallery-item.current {
+        z-index: 1002;
+
+
+        .image {
+            opacity: 1;
+        }
+
+
+    }
+
+
     // Gallery Item
 
-    .gallery-item {
+    .product-gallery .gallery-item {
         .animation;
         display: block !important;
         position: absolute;
@@ -336,19 +352,6 @@
             -moz-transition: opacity 0.5s ease;
             -o-transition: opacity 0.5s ease;
             transition: opacity 0.5s ease;
-        }
-
-
-    }
-
-    // Current
-
-    .gallery-item.current {
-        z-index: 1002;
-
-
-        .image {
-            opacity: 1;
         }
 
 
