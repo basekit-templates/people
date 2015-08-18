@@ -190,6 +190,8 @@
         width: 100%;
     }
     .post-article {
+         -webkit-flex: 0 1 47%;
+        -ms-flex: 0 1 47%;
         flex: 0 1 47%;
         margin: 0 10px 20px;
         position: relative;
@@ -460,3 +462,25 @@
         text-align: center;
     }
 }
+
+// Responsive Columns
+
+// Two Columns
+.columns-two-left,
+.columns-two-right,
+// Three Columns
+.columns-three-left,
+.columns-three-middle,
+.columns-three-right,
+// Four Columns
+.columns-four-first,
+.columns-four-second,
+.columns-four-third,
+.columns-four-fourth {
+    .blogpostlist .post-article {
+         -webkit-flex: 0 1 100%;
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
+    }
+}
+
