@@ -478,9 +478,41 @@
 .columns-four-third,
 .columns-four-fourth {
     .blogpostlist .post-article {
-         -webkit-flex: 0 1 100%;
+        -webkit-flex: 0 1 100%;
         -ms-flex: 0 1 100%;
         flex: 0 1 100%;
     }
 }
 
+// Three Columns
+.columns-three-left,
+.columns-three-middle,
+.columns-three-right,
+// Four Columns
+.columns-four-first,
+.columns-four-second,
+.columns-four-third,
+.columns-four-fourth {
+    .blogpostlist {
+        .post-content {
+            display: inline-block;
+        }
+        .post-excerpt {
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .blogpostlist .read-more {
+            margin: 10px 0 0;
+            position: relative;
+            bottom: inherit;
+        }
+        .post-footer {
+            position: relative;
+            height: auto;
+            text-align: left;
+        }
+        .post-footer .timestamp {
+            padding: 20px 0;
+        }
+    }
+}
