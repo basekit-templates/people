@@ -454,11 +454,13 @@
 
 // Blog List in Default Page
 .bk-pt-defaultpage {
-    .blogpostlist {
-        .post-article {
-            flex: 1 1 100%;
-            -webkit-flex: 0 1 100%;
-            -ms-flex: 0 1 100%;
+    @media only screen and (max-width : 860px) {
+        .blogpostlist {
+            .post-article {
+                flex: 1 1 100%;
+                -webkit-flex: 0 1 100%;
+                -ms-flex: 0 1 100%;
+            }
         }
     }
 }
