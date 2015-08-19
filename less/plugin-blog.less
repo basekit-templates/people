@@ -355,6 +355,8 @@
         .post-article:first-child {
             width: 100%;
             flex: 1 1 100%;
+            -webkit-flex: 0 1 100%;
+            -ms-flex: 0 1 100%;
             margin-top: 0;
             margin-bottom: 20px;
             margin-right: 20px;
@@ -412,7 +414,9 @@
 @media @tablet {
     .blogpostlist {
         .post-article {
-            flex: 0 1 100%;
+            flex: 1 1 100%;
+            -webkit-flex: 0 1 100%;
+            -ms-flex: 0 1 100%;
             margin: 0 0 20px;
             position: relative;
         }
@@ -444,6 +448,17 @@
         }
         .post-footer .timestamp {
             padding-top: 10px;
+        }
+    }
+}
+
+// Blog List in Default Page
+.bk-pt-defaultpage {
+    .blogpostlist {
+        .post-article {
+            flex: 1 1 100%;
+            -webkit-flex: 0 1 100%;
+            -ms-flex: 0 1 100%;
         }
     }
 }
