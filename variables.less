@@ -122,6 +122,10 @@ form,
 	.label {
 		color: @color__form-label--text;
 	}
+	.signupform__label {
+		color: @color__h2--text;
+		background-color: @color__h2--background;
+	}
 }
 
 .imagewidget {
@@ -176,13 +180,17 @@ form,
 		background-color: @color__twitter-item--background;
 	}
 	&__account-link {
-		color: @color__twitter-account-name--background;
+		color: @color__twitter-account-name--text;
 	}
 }
 
 .socialicons {
-	&__social-link {
+	&__social-link,
+	.social-link {
 		background-color: @color__socialicons--icon--background;
+		&:hover {
+			text-decoration: none;
+		}
 		&:before {
 			color: @color__socialicons--icon;
 		}
