@@ -190,6 +190,8 @@
         width: 100%;
     }
     .post-article {
+        -webkit-flex: 0 1 47%;
+        -ms-flex: 0 1 47%;
         flex: 0 1 47%;
         margin: 0 10px 20px;
         position: relative;
@@ -238,7 +240,7 @@
         }
     }
     .post-excerpt {
-        display: inline-block;
+        display: block;
         margin-bottom: 57px;
     }
     .post-excerpt p {
@@ -353,6 +355,8 @@
         .post-article:first-child {
             width: 100%;
             flex: 1 1 100%;
+            -webkit-flex: 0 1 100%;
+            -ms-flex: 0 1 100%;
             margin-top: 0;
             margin-bottom: 20px;
             margin-right: 20px;
@@ -410,7 +414,9 @@
 @media @tablet {
     .blogpostlist {
         .post-article {
-            flex: 0 1 100%;
+            flex: 1 1 100%;
+            -webkit-flex: 0 1 100%;
+            -ms-flex: 0 1 100%;
             margin: 0 0 20px;
             position: relative;
         }
@@ -446,6 +452,19 @@
     }
 }
 
+// Blog List in Default Page
+.bk-pt-defaultpage {
+    @media only screen and (max-width : 860px) {
+        .blogpostlist {
+            .post-article {
+                flex: 1 1 100%;
+                -webkit-flex: 0 1 100%;
+                -ms-flex: 0 1 100%;
+            }
+        }
+    }
+}
+
 // Link to blog posts list
 
 .blogpostlist {
@@ -458,5 +477,48 @@
         font-weight: @font-swatch6-font-weight;
         line-height: @font-swatch6-line-height;
         text-align: center;
+    }
+}
+
+// Responsive Columns
+
+// Two Columns
+.columns-two-left,
+.columns-two-right,
+// Three Columns
+.columns-three-left,
+.columns-three-middle,
+.columns-three-right,
+// Four Columns
+.columns-four-first,
+.columns-four-second,
+.columns-four-third,
+.columns-four-fourth {
+    .blogpostlist .post-article {
+        -webkit-flex: 0 1 100%;
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
+    }
+    .blogpostlist {
+        .post-content {
+            display: inline-block;
+        }
+        .post-excerpt {
+            margin-bottom: 0;
+            display: inline-block;
+        }
+        .read-more {
+            margin: 10px 0 0;
+            position: relative;
+            bottom: inherit;
+        }
+        .post-footer {
+            position: relative;
+            height: auto;
+            text-align: left;
+        }
+        .post-footer .timestamp {
+            padding: 20px 0;
+        }
     }
 }

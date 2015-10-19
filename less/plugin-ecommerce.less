@@ -56,6 +56,20 @@
     }
 }
 
+// Images
+
+.ecomproductslist,
+.ecomfeaturedproducts {
+    .product-item-image,
+    .product-item-image .image-link {
+        height: 257px;
+        line-height: 257px;
+        @media @tablet {
+            height: 201px;
+            line-height: 201px;
+        }
+    }
+}
 
 // Pagination
 
@@ -129,7 +143,8 @@
 .ecomproduct {
     .product-header {
         @media only screen and (min-width : 770px) {
-            padding-bottom: 40px;
+            padding-bottom: 5px;
+            padding-top: 40px;
         }
         width: 100%;
         display: inline-block;
@@ -143,18 +158,20 @@
         line-height: @font-swatch5-line-height;
         font-weight: @font-swatch5-font-weight;
     }
-    .product-actions {
-        padding: 20px;
-        border: 1px solid darken(@color-swatch7, 10%);
-    }
     .form-group:last-child .button {
         @media @tablet {
             margin: 20px 0;
         }
     }
+    .product-actions .form-body {
+        padding: 20px;
+        border: 1px solid darken(@color-swatch7, 10%);
+        margin-bottom: 20px;
+    }
     @media only screen and (min-width : 770px) {
         .product-body {
             float: left;
+            display: inline-block;
             width: 48%;
             p {
                 padding-right: 20px;
@@ -164,7 +181,7 @@
             float: right;
             width: 48%;
             margin: 0;
-            border: 1px solid darken(@color-swatch7, 10%);
+            border: none;
         }
         .product-attributes {
             width: 100%;
@@ -889,6 +906,9 @@
     }
 }
 
+.ecombasketsummary .summary-title {
+    display: none;
+}
 
 
 // -----------------

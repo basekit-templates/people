@@ -88,9 +88,6 @@ body {
 // Background
 
 .zone-content {
-    @media only screen and (min-width : 770px) {
-        min-height: 437px;
-    }
     padding: 30px;
     margin-bottom: 30px;
     background-color: @color-swatch7;
@@ -156,23 +153,19 @@ body {
             transform: rotate(-90deg) translate(-100%, 0px);
             h1 {
                 padding: 0;
-                max-width: 25vh;
                 line-height: 1.2;
                 text-align: right;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 font-size: @font-swatch1-font-size;
+                max-width: 70vh;
             }
         }
         .zone-content {
             width: 90%;
             float: right;
-        }
-    }
-    @media only screen and (min-width : 1024px) {
-        .page-title h1 {
-            max-width: 35vh;
+            min-height: 437px;
         }
     }
 }
@@ -194,10 +187,10 @@ body {
     font-family: @font-swatch7-font-family;
     font-size: @font-swatch7-font-size;
     line-height: @font-swatch7-line-height;
-    color: lighten(@color-swatch5, 25%);
+    color: @color-swatch3;
     font-weight: 400;
     &:hover {
-        color: @color-swatch3;
+        color: lighten(@color-swatch5, 25%);
         text-decoration: none;
     }
 }
@@ -409,13 +402,20 @@ hr {
         text-decoration: none;
         cursor: text;
     }
-    @media @mobile {
+    @media screen and (max-width: 854px) {
         .phone-number-link {
             width: 100%;
             padding: 8px 20px;
             text-align: center;
+            background-color: @font-swatch7-background-color;
             .label {
                 color: @font-swatch7-color;
+            }
+            &:before {
+                color: @font-swatch7-color;
+            }
+            &:hover {
+                background-color: @font-swatch7-background-color-hover;
             }
         }
         a:hover {
