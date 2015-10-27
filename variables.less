@@ -10,6 +10,7 @@ html body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color__body--background', endColorstr='@color__body--background',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+
 .template-content {
 	background-color: @color__container--background;
 }
@@ -144,7 +145,7 @@ form,
 .gallery {
 	background-color: @color__gallery--background;
 	&__caption.caption {
-		.gradient(fadeout(@color__gallery-caption--background, 100%), fadeout(@color__gallery-caption--background, 0%));
+		background-color: @color-swatch5;
 	}
 	&__image-title.image-title {
 		color: @color__gallery-title--text;
