@@ -137,7 +137,7 @@ form,
 .gallery {
 	background-color: @color__gallery--background;
 	&__caption.caption {
-		background-color: @color-swatch5;
+		background-color: @color__gallery-caption--background;
 	}
 	&__image-title.image-title {
 		color: @color__gallery-title--text;
@@ -161,9 +161,6 @@ form,
 	.button--pagination {
 		background-color: @color__slideshow-pagination-item--background;
 		color: @color__slideshow-pagination-item--background--selected;
-	}
-	.selected .button--pagination {
-		background-color: @slideshow__pagination-item-bg-color--selected;
 	}
 }
 
@@ -289,11 +286,6 @@ form,
 .menu {
 	background-color: @color__menu--background;
 	.menu-item {
-		//background-color: lighten(@color__menu-item--background, 3%);
-/*
-		&--featured {
-			background-color: lighten(@color__menu-section-featured--background, 2%);
-		}
-*/
+		background-color: @color__menu-item--background;
 	}
 }
