@@ -137,7 +137,6 @@
             "color__secondary": "@color-swatch2"
         },
         "site": {
-            "color__body--background": "@color__primary",
             "color__link--text": "@color-swatch3",
             "color__companyname--text": "@color-swatch4",
 
@@ -199,8 +198,8 @@
         },
         "navigation": {
             "color__navigation--text": "@color-swatch4",
-            "color__navigation--text--hover": "@color__primary",
-            "color__navigation--text--selected": "@color__primary",
+            "color__navigation--text--hover": "@color-swatch3",
+            "color__navigation--text--selected": "@color-swatch3",
 
             "font__navigation--font-family" : "@font-swatch6-font-family",
             "font__navigation--font-size" : "@font-swatch6-font-size",
