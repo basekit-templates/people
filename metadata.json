@@ -137,6 +137,7 @@
             "color__secondary": "@color-swatch2"
         },
         "site": {
+            "color__body--background": "@color__primary",
             "color__link--text": "@color-swatch3",
             "color__companyname--text": "@color-swatch4",
 
