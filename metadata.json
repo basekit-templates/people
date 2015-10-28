@@ -241,9 +241,7 @@
             "font__feature-strapline--letter-spacing" : "@font-swatch9-letter-spacing"
         },
         "forms": {
-            "color__form--background": "transparent",
             "color__form-legend--text": "@color-swatch2",
-            "color__form-legend--background": "transparent",
             "color__form-label--text": "@color-swatch5"
         },
         "image": {
@@ -278,10 +276,7 @@
             "color__socialicons--text": "@color__secondary"
         },
         "blog": {
-            "color__blogsearch--background": "transparent",
-            "color__blogsearch-legend--background": "transparent",
-            "color__blogsearch-legend--text": "@color-swatch4",
-            "color__blogsearch-label--text": "@color-swatch4",
+            "color__blogsearch-legend--text": "@color-swatch2",
             "color__blogpostlist--background": "transparent",
             "color__blogpostlist-article--background": "transparent",
             "color__blogpostlist-title--background": "transparent",
