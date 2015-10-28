@@ -237,7 +237,6 @@
             "color__form-label--text": "@color-swatch5"
         },
         "image": {
-            "color__image-caption--background": "transparent",
             "color__image-title--text": "@color-swatch4",
             "color__image-description--text": "@color-swatch4"
         },
