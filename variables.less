@@ -52,27 +52,18 @@ button.button {
 	}
 }
 
-header.template-header {
-	background-color: @color__header--background;
-}
-
 footer.template-footer {
 	background-color: @color__footer--background;
-	border-color: @color__footer--border;
 }
 
 .extendednavigation {
-	background-color: @color__navigation--background;
-	&__navigation-list.navigation-list--children {
-		background-color: @color__navigation-list--background;
-	}
 	&__item-name.item-name {
 		color: @color__navigation--text;
 		&:hover {
 			color: @color__navigation--text--selected;
 		}
 	}
-	&__navigation-item.selected {
+	.navigation-item.selected > .item-name {
 		color: @color__navigation--text--selected;
 	}
 }

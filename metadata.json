@@ -194,21 +194,13 @@
             "font__button--line-height" : "@font-swatch7-line-height",
             "font__button--letter-spacing" : "@font-swatch7-letter-spacing"
         },
-        "header": {
-            "color__header--background": "transparent"
-        },
         "footer": {
-            "color__footer--background": "@color-swatch7",
-            "color__footer--border": "@color__primary"
+            "color__footer--background": "@color-swatch7"
         },
         "navigation": {
-            "color__navigation--background": "transparent",
             "color__navigation--text": "@color-swatch4",
             "color__navigation--text--hover": "@color__primary",
             "color__navigation--text--selected": "@color__primary",
-            "color__navigation-list--background": "@color-swatch7",
-            "color__navigation-item--background": "transparent",
-            "color__navigation-item--background--selected": "transparent",
 
             "font__navigation--font-family" : "@font-swatch6-font-family",
             "font__navigation--font-size" : "@font-swatch6-font-size",
