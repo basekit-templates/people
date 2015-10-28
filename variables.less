@@ -195,52 +195,27 @@ form,
 }
 
 .ecomproductslist {
-	background-color: @color__ecomproductslist--background;
-	&__product-filters {
-		background-color: @color__ecomproductslist-filters--background;
-	}
-	&__legend.legend {
-		background-color: @color__ecomproductslist-legend--background;
-		color: @color__ecomproductslist-legend--text;
-	}
 	&__label.label {
 		color: @color__ecomproductslist-label--text;
 	}
-	&__product-list {
-		background-color: @color__ecomproductslist-product-list--background;
-	}
-	&__product-item {
-		background-color: @color__ecomproductslist-product-item--background;
-	}
 	&__product-item-title a {
-		background-color: @color__ecomproductslist-product-title--background;
 		color: @color__ecomproductslist-product-title--text;
 	}
 }
 
 .ecomproduct {
-	background-color: @color__ecomproduct--background;
 	&__image-link.image-link,
 	&__gallery-item.gallery-item {
 		background-color: @color__ecomproduct-images--background;
 	}
-	&__product-content {
-		background-color: @color__ecomproduct-content--background;
-	}
 	&__product-title {
-		background-color: @color__ecomproduct-title--background;
 		color: @color__ecomproduct-title--text;
 	}
 	&__product-price {
-		background-color: @color__ecomproduct-price--background;
 		color: @color__ecomproduct-price--text;
 	}
 }
 .ecombasket {
-	background-color: @color__ecombasket--background;
-	&__basket-list {
-		background-color: @color__ecombasket-list--background;
-	}
 	button.button {
 		background-color: @color__ecombasket-button--background;
 		color: @color__ecombasket-button--text;
@@ -250,13 +225,20 @@ form,
 	}
 }
 
-.menusections {
-	background-color: @color__menusections--background;
-}
-
 .menu {
-	background-color: @color__menu--background;
-	.menu-item {
-		background-color: @color__menu-item--background;
+	.section-title {
+		color: @color__menu-section-header--text;
+	}
+	.menu-section--subsection .section-title {
+		color: @color__menu-subsection-header--text;
+	}
+	.menu-section--featured .section-title {
+		color: @color__menu-subsection-featured-header--text;
+	}
+	.item-title {
+		color: @color__menu-item-title--text;
+	}
+	.menu-item--featured .item-title {
+		color: @color__menu-item-featured-title--text;
 	}
 }

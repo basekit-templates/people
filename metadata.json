@@ -272,32 +272,23 @@
             "color__blogpost-title--text": "@color-swatch4"
         },
         "ecommerce": {
-            "color__ecomproductslist--background": "transparent",
-            "color__ecomproductslist-filters--background": "transparent",
-            "color__ecomproductslist-legend--background": "transparent",
-            "color__ecomproductslist-legend--text": "@color-swatch4",
             "color__ecomproductslist-label--text": "@color-swatch4",
-            "color__ecomproductslist-product-list--background": "transparent",
-            "color__ecomproductslist-product-item--background": "transparent",
-            "color__ecomproductslist-product-title--background": "transparent",
             "color__ecomproductslist-product-title--text": "@color__primary",
-            "color__ecomproduct--background": "transparent",
+
             "color__ecomproduct-images--background": "darken(@color-swatch1,5%)",
-            "color__ecomproduct-content--background": "transparent",
-            "color__ecomproduct-title--background": "transparent",
             "color__ecomproduct-title--text": "@color-swatch4",
-            "color__ecomproduct-price--background": "transparent",
             "color__ecomproduct-price--text": "@color-swatch4",
-            "color__ecombasket--background": "transparent",
-            "color__ecombasket-list--background": "transparent",
-            "color__ecombasket-button--background": "@color__primary",
-            "color__ecombasket-button--background--hover": "darken(@color__primary, 10%)",
-            "color__ecombasket-button--text": "@color-swatch1"
+
+            "color__ecombasket-button--background": "@color__button--background",
+            "color__ecombasket-button--background--hover": "@color__button--background--hover",
+            "color__ecombasket-button--text": "@color__button--text"
         },
         "menu": {
-            "color__menusections--background": "transparent",
-            "color__menu--background": "transparent",
-            "color__menu-item--background": "transparent"
+            "color__menu-section-header--text": "@color__secondary",
+            "color__menu-subsection-header--text": "@font-swatch2-color",
+            "color__menu-subsection-featured-header--text": "@font-swatch2-color",
+            "color__menu-item-title--text": "@font-swatch3-color",
+            "color__menu-item-featured-title--text": "@font-swatch3-color"
         }
     }
 }
