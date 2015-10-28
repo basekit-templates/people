@@ -282,13 +282,6 @@
             "color__ecombasket-button--background": "@color__button--background",
             "color__ecombasket-button--background--hover": "@color__button--background--hover",
             "color__ecombasket-button--text": "@color__button--text"
-        },
-        "menu": {
-            "color__menu-section-header--text": "@color__secondary",
-            "color__menu-subsection-header--text": "@font-swatch2-color",
-            "color__menu-subsection-featured-header--text": "@font-swatch2-color",
-            "color__menu-item-title--text": "@font-swatch3-color",
-            "color__menu-item-featured-title--text": "@font-swatch3-color"
         }
     }
 }
