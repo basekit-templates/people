@@ -237,21 +237,21 @@
             "color__form-label--text": "@color-swatch5"
         },
         "image": {
-            "color__image-title--text": "@color-swatch4",
-            "color__image-description--text": "@color-swatch4"
+            "color__image-title--text": "@font-swatch8-color",
+            "color__image-description--text": "@font-swatch9-color"
         },
         "gallery": {
             "color__gallery--background": "lighten(@color-swatch1, 5%)",
-            "color__gallery-caption--background": "@color-swatch5",
-            "color__gallery-title--text": "@color-swatch4",
-            "color__gallery-description--text": "@color-swatch4"
+            "color__gallery-caption--background": "@color-swatch7",
+            "color__gallery-title--text": "@font-swatch8-color",
+            "color__gallery-description--text": "@font-swatch9-color"
         },
         "slideshow": {
             "color__slideshow--background": "transparent",
-            "color__slideshow-caption--background": "@color-swatch5",
-            "color__slideshow-title--text": "@color-swatch4",
-            "color__slideshow-description--text": "@color-swatch4",
-            "color__slideshow-pagination-item--background": "fadeout(darken(@color-swatch5, 30%), 30%)",
+            "color__slideshow-caption--background": "@color-swatch7",
+            "color__slideshow-title--text": "@font-swatch8-color",
+            "color__slideshow-description--text": "@font-swatch9-color",
+            "color__slideshow-pagination-item--background": "hsla(hue(@color-swatch1), saturation(@color-swatch1), lightness(@color-swatch1), 0.5)",
             "color__slideshow-pagination-item--background--selected": "@color__secondary"
         },
         "twitter": {

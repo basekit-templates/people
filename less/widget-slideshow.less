@@ -143,10 +143,7 @@
         padding: 0;
         overflow: hidden;
         color: @color-swatch5;
-        background-color: hsla(hue(@color-swatch1),
-                               saturation(@color-swatch1),
-                               lightness(@color-swatch1),
-                                0.5);
+        background-color: @color__slideshow-pagination-item--background;
         @media @mobile {
             width: 38px;
             height: 38px;
@@ -154,7 +151,7 @@
         }
     }
     .pagination-item.selected .button {
-        background-color: @color-swatch2;
+        background-color: @color__slideshow-pagination-item--background--selected;
     }
 }
 
