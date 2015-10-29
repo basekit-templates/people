@@ -115,27 +115,25 @@ form,
 }
 
 .gallery {
-	background-color: @color__gallery--background;
-	&__caption.caption {
+	.caption {
 		background-color: @color__gallery-caption--background;
 	}
-	&__image-title.image-title {
+	.caption .image-title {
 		color: @color__gallery-title--text;
 	}
-	&__image-description.image-description {
+	.caption .image-description {
 		color: @color__gallery-description--text;
 	}
 }
 
 .responsiveslideshow {
-	background-color: @color__slideshow--background;
-	&__caption.caption {
-		background-color: @color-swatch5;
+	.caption {
+		background-color: @color__slideshow-caption--background;
 	}
-	&__image-title.image-title {
+	.caption .image-title {
 		color: @color__slideshow-title--text;
 	}
-	&__image-description.image-description {
+	.caption .image-description {
 		color: @color__slideshow-description--text;
 	}
 	.button--pagination {
@@ -145,7 +143,6 @@ form,
 }
 
 .twitter {
-	background-color: @color__twitter--background;
 	&__tweet-item {
 		background-color: @color__twitter-item--background;
 	}
