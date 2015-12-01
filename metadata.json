@@ -262,7 +262,7 @@
         "blog": {
             "color__blogsearch-legend--text": "@color__secondary",
             "color__blogpostlist-article--background": "@color-swatch7",
-            "color__blogpostlist-title--text": "@color__primary",
+            "color__blogpostlist-title--text": "@color-swatch4",
             "color__blogpost-title--text": "@color-swatch4"
         },
         "ecommerce": {
