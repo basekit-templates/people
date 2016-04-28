@@ -4,20 +4,16 @@
 
 	<div class="template-header-rowone header-flex-container">
 
-        <div class="header-flex-item header-social">
-            {{widget('socialicons', 'socialnetworks', {
-            'googleplus': 'https://plus.google.com/101946323226233111530',
-            'linkedin':'http://www.linkedin.com/company/mycompanyname',
-            'facebook': 'https://www.facebook.com/mycompanyname',
-            'twitter': 'https://twitter.com/mycompanyname',
-            'youtube': 'https://www.youtube.com/user/mycompanyname',
-            'rss': 'http://news.bbc.co.uk/1/hi/help/rss/default.stm'
-            })|raw}}
-        </div><!-- End header-flex-item header-social -->
+        {{widget('socialicons', 'socialnetworks', {
+        'googleplus': 'https://plus.google.com/101946323226233111530',
+        'linkedin':'http://www.linkedin.com/company/mycompanyname',
+        'facebook': 'https://www.facebook.com/mycompanyname',
+        'twitter': 'https://twitter.com/mycompanyname',
+        'youtube': 'https://www.youtube.com/user/mycompanyname',
+        'rss': 'http://news.bbc.co.uk/1/hi/help/rss/default.stm'
+        })|raw}}
 
-		<div class="header-flex-item template-navigation">
-			{{widget('extendednavigation', 'extendednavigation', {"align":"left"})|raw}}
-		</div>
+		{{widget('extendednavigation', 'extendednavigation', {"align":"left"})|raw}}
 
 	</div><!-- End template-header-rowone -->
 
